@@ -9,12 +9,13 @@
 a{
     text-decoration: none;
 }
+#bar-icon{
+    display: none;
+  color: #fff;
+    font-size: xx-large;
 
-/*start-section-1*/
-#section-one{
-background-image: url(images/banner-bg.jpg);
-border-bottom-right-radius: 250px;
 }
+
 #main-header{
     background-color: #7a6ad3;
     border-end-start-radius: 25px;
@@ -54,7 +55,7 @@ padding: 10px 15px;
 border-radius: 25px;
 align-self: center;
 opacity: 0.9;
-margin:10px 10px ;
+margin:10px 0px ;
 
 }
 form[class="link"]{
@@ -86,32 +87,59 @@ input + i{
     top: 15px;
     right: 20px;
 }
+/*start-section-1*/
+#section-one{
+background-image: url(images/banner-bg.jpg);
+border-bottom-right-radius: 250px;
+}
+
 #div1-section-1{
     position: relative;
      padding-top: 170px;
-     padding-bottom: 100px;
+     padding-bottom: 150px;
 }
 
 #div2-section-1{
     background-image: url(images/banner-item-01.jpg);
-   width: 70%;
+   width: 73%;
    padding: 100px;
+   display: flex;
    justify-self: center;
    margin-left: 100px;
    border-radius: 25px;
    color: #fff;
+   
   
   
    
 }
+
+#div-in-div2{
+    width: 75%;
+   
+
+}
 #div-in-div2 > h2{
     font-size: 50px;
     width: 60%;
+    margin-bottom: 40px;
+    font-weight: 700;
     
+}
+#div-in-div2 > span{
+    background-color: #7a6ad3;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 25px;
+    margin-bottom: 50px;
+    display:inline-block;
 }
 #div-in-div2 > p{
     width: 60%;
     line-height: 30px;
+    font-size: 14px;
+    opacity: 0.8;
 }
 #demo{
   margin-top: 50px; 
@@ -120,6 +148,8 @@ input + i{
 }
 #demo + div{
     display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
 }
 #demo > a{
     padding: 15px 25px;
@@ -128,6 +158,18 @@ input + i{
     border-radius: 25px;
     font-size: 14px;
     font-weight: 600;
+}
+#demo + div > i{
+    width: 50px;
+    height: 50px;
+    padding-top: 17px;
+    color: #7a6ad3;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-size: 16px;
+       
+
 }
 
 .icon-section-1  {
@@ -148,15 +190,13 @@ input + i{
 }
 #icon1{
     position: absolute;
-     position: absolute;
     top: 75%;
    left: 9%;
 }
 
 #icon2{
     position: absolute;
-     position: absolute;
-    top: 83%;
+    top: 81.5%;
     left: 9%;
 }
 /*end-section-1*/
@@ -202,7 +242,8 @@ top: -30%;
     line-height: 30PX;
     color: #4A4A4A;
     margin-bottom: 20px;
-    letter-spacing: 0.2px;
+    letter-spacing: 0.6px;
+    font-size: 14px;
 }
 
 .card > button{
@@ -213,6 +254,11 @@ top: -30%;
     background-color: #fff;
     border-radius: 25px;
     font-weight: 700;
+}
+
+#main-div-list{
+    display: flex;
+    justify-content: right;
 }
 
 #about-list{
@@ -227,7 +273,7 @@ top: -30%;
     background-color: #7a6ad3;
     border-radius: 40px;
     padding: 80px 50px 50px;
-    width: 50%;
+    width: 53%;
 
 
 }
@@ -316,11 +362,14 @@ top: -30%;
     color: #4A4A4A;
    font-size: 14px ;
    line-height: 30px;
-   margin-top: 25px;
+   margin-top: 20px;
    font-weight: 500;
+   letter-spacing: 0.7px;
+   word-spacing: 2.2px;
 }
 #list div:nth-child(1) > button> div > span{
     color: #d63384;
+    font-size: 12px;
 }
 
 #about{
@@ -356,7 +405,7 @@ top: -30%;
     color: #4A4A4A;
     line-height: 30px;
     font-size: 14px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 #about > div > button{
@@ -368,13 +417,17 @@ top: -30%;
     border-radius: 30px;
     margin-top: 0px;
     margin-bottom: 50px;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 #about > div > button:hover{
     background-color: #7a6ad3;
     color: #fff;
 }
+/* end-section-2 */
 
+/* start-section-3 */
 #section-3 > h6{
 text-align: center;
 color:#7a6ad3;
@@ -391,7 +444,7 @@ padding-top: 120px;
 #latest-navbar{
     background-color: #f1f0fe;
     border-radius: 30px;
-    width: 42%;
+    width: 583px;
    height: 54px;
    padding: 15px 40px;
    margin: 0% auto 70px;
@@ -402,18 +455,18 @@ padding-top: 120px;
 #latest-navbar > a{
     padding: 0px 15px;
     color: #212529;
-    font-weight: 600;
+    
     font-size: 14px;
 }
 
-#latest-navbar > a :hover{
+#latest-navbar > a:hover{
     color: #7a6ad3;
 }
 
 #cards-latest{
     display: grid;
-    grid-template-columns: repeat(3, 356px);
-    grid-template-rows: repeat(2, 370px);
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows: repeat(2, 410px);
     justify-content: center;
     gap: 30px 20px;
 }
@@ -424,7 +477,7 @@ padding-top: 120px;
    
 }
 .image-latest > img{
-    width: 356px;
+    width: 100%;
     border-radius: 30px;
    
    
@@ -454,11 +507,22 @@ padding-top: 120px;
     top: 0px;
     right: 0px;
     padding: 25px;
-    border-top-right-radius: 30px;
-    border-bottom-left-radius: 70%;
-    border-bottom-right-radius: 15%;
-    border-top-left-radius:15%;
+    border-top-right-radius: 50px;
+     border-bottom-left-radius: 180px; 
+    /* border-bottom-right-radius: 500px;  */
+    /* border-top-left-radius: 40%; */
    
+}
+
+.span2-latest:hover{
+    transform: scaleY(1.1);
+   
+}
+.span2-latest > em{
+    font-size: 18px;
+    font-style: normal;
+  font-weight: 500;
+    
 }
 
 .teacher{
@@ -484,6 +548,7 @@ padding-top: 120px;
     padding: 120px 0px 80px;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
    
     
 }
@@ -497,6 +562,10 @@ font-size: 48px;
 font-weight: 700;
 }
 
+.teacher + h3:hover{
+color: #7a6ad3;
+}
+
 .detail > p{
     font-weight: 600;
     font-size: 15px;
@@ -505,7 +574,7 @@ font-weight: 700;
 
 #teachers{
     display: grid;
-    grid-template-columns: repeat(4, 261px);
+    grid-template-columns: repeat(4, 23%);
     justify-content: center;
     gap: 25px;
     
@@ -567,10 +636,11 @@ right: 8%;
     display: flex;
     background-color: #f1f0fe;
     width: 65%;
-    height: 90vh;
+    height: 100vh;
     border-top-left-radius: 500px;
      border-bottom-left-radius: 500px;
     position: relative;
+    flex-wrap: wrap;
     
 }
 
@@ -668,10 +738,15 @@ right: 8%;
     color: #7a6ad3;
 }
 
+/* end-section-3 */
+
+/* start-section-4 */
+
 #h6-section-4{
     color: #7a6ad3;
     text-align: center;
     font-size: 14px;
+    margin-top: 80px;
 }
 
 #h6-section-4 + h2 {
@@ -680,28 +755,57 @@ right: 8%;
     margin: 20px 0px 80px;
 }
 
-.schedule{
+#main-schedule{
     display: flex;
-    
+    flex-wrap: wrap;
+    justify-content: center;
 }
+#card-schedule{
+    width: 100%;
+}
+
 .schedule{
+       display: flex;
+       flex-wrap: wrap;
     background-color: #f1f0fe;
-    width: 80%;
+    width: 80vw;
     margin-bottom: 80px;
-    padding: 40px;
-    justify-content: space-around;
+    padding: 40px 0px 40px 40px;
     position: relative;
     border-radius: 25px;
-
+   justify-content: right;
   
 
 }
 
+.schedule div:nth-child(1){
+    width: 18%;
+}
+
+.schedule div:nth-child(2){
+    width: 28% !important;
+}
+
+.schedule div:nth-child(3){
+    width: 18%;
+ 
+}
+
+.schedule div:nth-child(4){
+    width: 13%;
+    
+}
+
+.schedule div:nth-child(5){
+width: 13%;
+}
+
 .schedule > img{
+    width: 241px;
     border-radius: 25px;
     position: absolute; 
-    top: -10%;
-left: -50px;
+    top: -15%;
+   left: 4%;
 }
 
 .span-schedule{
@@ -731,4 +835,229 @@ left: -50px;
 .schedule-details > h5 {
     font-size: 16px;
     color: #7a6ad3;
+}
+
+.icon-schedule{
+    background-color: #7a6ad3;
+    color: #fff;
+    padding: 50px 18px;
+    border-bottom-left-radius: 55px;
+    border-top-left-radius: 55px;
+    position: absolute;
+   top: 20px;
+
+}
+
+#contact-form{
+    background-color: #f1f0fe;
+    width: 65%;
+    height: 110vh;
+    border-top-right-radius: 500px;
+    border-bottom-right-radius: 500px;
+    margin-top: 120px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 120px;
+
+}
+
+#contact{
+    width: 50%;
+   
+    position: absolute; 
+    left: 13%;
+    align-self: center;
+
+}
+
+#contact > h5{
+    font-size: 14px;
+    color: #7a6ad3;
+    margin-top: 80px;
+}
+
+#contact > h2{
+    font-size: 36px;
+    margin: 20px 0px;
+    color: #1E1E1E;
+}
+
+#contact > p{
+    line-height: 30px;
+    color: #4A4A4A;
+    font-size: 15px;
+    margin-top: 50px;
+}
+
+#off{
+    background-color: #fff;
+    margin: 50px 0px;
+    margin-bottom: 80px;
+    border-radius: 20px;
+    /* display: flex; */
+    padding: 30px 120px;
+    position: relative;
+    justify-items: center;
+
+   
+}
+
+#off-span{
+    padding: 30px 8px;
+    font-size: 16px;
+    background-color: #7a6ad3;
+    color: #fff;
+    border-bottom-right-radius: 60px;
+    border-top-right-radius: 60px;
+    border-top-left-radius: 15%;
+    border-bottom-left-radius: 15%;
+    font-weight: 600;
+    position: absolute;
+    left: 0%;
+    top: 0;
+    
+}
+#off-span > h6 {
+    font-size: 28px;
+}
+
+#off > h5{
+    font-size: 15px;
+    color:#4A4A4A;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-right: 30px;
+    margin-bottom: 15px;
+}
+#off > h5 > span {
+    color: #7a6ad3;
+    font-weight: 600;
+}
+
+#off > h3 {
+    font-size: 22px;
+    color: #1E1E1E;
+}
+#off > h3 > span{
+    color: #7a6ad3;
+}
+
+
+#off-icon{
+    background-color: #7a6ad3;
+    color: #fff;
+    padding: 13px;
+    border-radius: 50%;    
+    position: absolute;
+    right: 8%;
+    top: 30%;
+}
+
+#form-contact{
+    background-color: #7a6ad3;
+    border-radius: 25px;
+    width: 62%;
+    padding: 80px;
+    position: absolute; 
+    left: 75%;
+    align-self: center;
+    
+    
+}
+#form-contact > form > input{
+    display: block;
+    border: none;
+    outline: none;
+    width: 100%;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    padding: 15px;
+    font-size: 16px;
+    background-color:#f9ebff26;
+    color: #fff;
+
+}
+
+#form-contact > form > input::placeholder{
+    color: #fff;
+    font-size: 14px;
+}
+
+#form-contact > form > input[type="submit"]{
+    color:#7a6ad3;
+    font-size: 15px;
+    width:180px ;
+    margin-bottom: 0%;
+    background-color: #fff;
+    font-weight: 600;
+}
+
+#form-contact > form > textarea{
+    background-color: #f9ebff26;
+    color: #fff;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 20vh;
+    border-radius:25px ;
+    padding: 20px;
+    font-size: 14px;
+    margin-bottom: 30px;
+    resize:vertical ;
+}
+
+#form-contact > form > textarea::placeholder{
+    color: #fff;
+    font-size: 14px;
+}
+
+#img-1-form{
+    position: absolute;
+    top: 0%;
+}
+
+#img-2-form{
+    position: absolute;
+    bottom: 0%;
+    right: 9px;
+}
+
+footer{
+    background-color: #7a6ad3;
+    color: #fff;
+    padding-top: 35px;
+    display: flex;
+    font-size: 14px;
+   
+    /* justify-content: space-around; */
+    align-items: center;
+   border-top-left-radius: 500px;
+   border-top-right-radius: 500px;
+    
+}
+footer > p{
+    display: inline-block;
+    text-align: center;
+    width: 50%;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+   
+
+}
+footer > p > a{
+    color: #fff;
+
+}
+
+footer > p >  a:hover{
+    color: #a8a6a6;
+}
+footer > img {
+   transform: scaley(-1);
+   margin-left: 2.5%;
+   
+  
+   
 }
